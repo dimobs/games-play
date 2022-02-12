@@ -20,9 +20,12 @@ useEffect(() =>{
     return (
         <section id="catalog-page">
         <h1>All Games</h1>
-{games.map(x => <GameCard game={x} />)}
+{ games.length > 0 
+? games.map(x => <GameCard key={x._id} game={x} />)
+: <h3 className="no-articles">No games yet</h3>
 
-        <h3 className="no-articles">No games yet</h3>
+}
+
     </section>
     )
 };
