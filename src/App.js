@@ -22,9 +22,9 @@ function App() {
         let argument = pathNames[2];
 
         const routes = {
-            'home': <WelcomeWorld />, //резулт. на комп.(<WelcomeWorld />), а не реф-a (WelcomeWorld)
+            'home': <WelcomeWorld navigationChangeHandler={navigationChangeHandler} />, //резулт. на комп.(<WelcomeWorld />), а не реф-a (WelcomeWorld)
             'games': <GameCatalog navigationChangeHandler={navigationChangeHandler} />,
-            'create-game': <GameCreate  />,
+            'create-game': <GameCreate />,
             'login': <Login />,
             'register': <Register />,
             'details': <GameDetails id={argument} /> 
