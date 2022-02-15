@@ -39,7 +39,7 @@ return routes[rootPath]
                 navigationChangeHandler={navigationChangeHandler}
             />
             <main id="main-content">
-                {router(page)  || <ErrorPage />}
+            <Route />
             </main>
 
         </div>
