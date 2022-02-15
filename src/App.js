@@ -36,10 +36,12 @@ return routes[rootPath]
     return (
         <div id="box">
             <Header
-                navigationChangeHandler={navigationChangeHandler}
+            navigationChangeHandler={navigationChangeHandler}
             />
+
             <main id="main-content">
-           
+           <Route path="/" exact component={WelcomeWorld} />
+           <Route path="/games" component={GameCatalog} />
             </main>
 
         </div>
